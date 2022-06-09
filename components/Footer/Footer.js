@@ -1,13 +1,16 @@
 import React from "react";
+// importing icons
 import {
   LinkIcon,
   ViewGridIcon,
   QuestionMarkCircleIcon,
 } from "@heroicons/react/outline";
+// for animations
 import { Fade } from "react-reveal";
 
 const Footer = () => {
   return (
+    //   fixing the footer at the bottom of the all other components
     <div className="relative mt-20">
       <Fade up>
         <div class="absolute inset-x-0 bottom-0">
