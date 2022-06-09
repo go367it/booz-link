@@ -1,6 +1,8 @@
 import React from "react";
 import { MenuIcon } from "@heroicons/react/outline";
 import { LinkIcon } from "@heroicons/react/outline";
+import Fade from 'react-reveal/Fade';
+
 
 const Navbar = () => {
   // for hiding the mobile menu
@@ -11,8 +13,9 @@ const Navbar = () => {
 
   return (
     <div>
+        <Fade down>
       <div className="py-3">
-        <div className="flex justify-between w-screen">
+        <div className="flex justify-between w-full">
           <div className="primary ml-8 text-blue-600 flex items-center gap-2 md:gap-4">
             <LinkIcon className="h-6 w-6" />
             <h2 className="text-xl md:text-2xl">Booz.link</h2>
@@ -75,6 +78,7 @@ const Navbar = () => {
         </div>
       </div>
       <hr />
+      </Fade>
     </div>
   );
 };
