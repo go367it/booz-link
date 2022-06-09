@@ -2,7 +2,7 @@ import React from "react";
 import { MenuIcon } from "@heroicons/react/outline";
 import { LinkIcon } from "@heroicons/react/outline";
 import Fade from 'react-reveal/Fade';
-
+import Link from 'next/link'
 
 const Navbar = () => {
   // for hiding the mobile menu
@@ -24,7 +24,9 @@ const Navbar = () => {
           <div className="secondary hidden md:flex items-center gap-8">
             <a>Features</a>
             <a>FAQ</a>
+            <Link href='/login'>
             <a className=" text-blue-600">Login</a>
+            </Link>
 
             <button
               className="bg-blue-500 py-2 px-4 rounded-full mr-10 text-white 
