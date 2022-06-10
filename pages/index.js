@@ -1,7 +1,7 @@
 import Head from "next/head";
 import HomepageImage1 from "../Images/Homepage/homepage.svg";
 import Image from "next/image";
-import { Fade } from "react-reveal";
+import Zoom from 'react-reveal/Zoom';
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <div className="w-full h-full">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="flex justify-center items-center">
-            <Fade left>
+            <Zoom>
             <div className="p-4 md:p-20 space-y-4 items-center">
               <h2 className=" text-6xl font-semibold">
                 <spam className=" text-blue-600">Simple-ize</spam> your advanced
@@ -30,12 +30,12 @@ export default function Home() {
                 Get started
               </button>
             </div>
-            </Fade>
+            </Zoom>
           </div>
           <div>
-            <Fade right>
+            <Zoom>
             <Image src={HomepageImage1} alt="Image 1" />
-            </Fade>
+            </Zoom>
           </div>
         </div>
       </div>
